@@ -2,7 +2,7 @@
     "compilerOptions": {
         "outDir": "./dist/",
         "noImplicitAny": true,
-        "module": "es6",
+        "module": "esnext",
         "target": "es5",
         "jsx": "react-jsx",
         "allowJs": true,
@@ -15,6 +15,6 @@
     "ts-node": {
         "compilerOptions": {
             "module": "CommonJS"
-        }
+        },
     }
 }
