@@ -6,7 +6,7 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 export function buildPlugins({paths, mode}: BuildOptions ): webpack.WebpackPluginInstance[] {
 
-    return [
+    const plugins =  [
         new HtmlWebpackPlugin({
             template: paths.html
         }),
@@ -19,4 +19,10 @@ export function buildPlugins({paths, mode}: BuildOptions ): webpack.WebpackPlugi
             __IS__DEV__: mode === 'development'
         })
     ]
+
+    if (mode === 'development') {
+        plugins.push(new webpack.HotModuleReplacementPlugin());
+    }
+
+    return plugins
 }
