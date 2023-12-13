@@ -1,4 +1,3 @@
-
 export type BuildMode = 'production' | 'development';
 
 export interface BuildPath {
@@ -10,7 +9,7 @@ export interface BuildPath {
 
 export interface BuildEnv {
     mode: BuildMode;
-    port: number; 
+    port: number;
 }
 
 export interface BuildOptions {
