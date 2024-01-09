@@ -1,4 +1,4 @@
-.Navbar {
+.navbar {
     width: 100%;
     height: var(--navbar-height);
     background: var(--inverted-bg-color);
@@ -9,11 +9,9 @@
 }
 
 .links { 
-
     .link {
         text-decoration: none;
     }
-
 
     & > .link:not(:last-child) {
         margin-right: 16px;
